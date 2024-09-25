@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Will Fossard Portfolio</title>
   </head>
   <body>
@@ -18,14 +18,15 @@
       </div>
     </header>
     <main>
-      <section id="about-me-contents">
-        <div id="about-me-container">
-          <p class="primary-text large-horizontal-gap">Hello, my name is</p>
-          <h1 class="heading-text large-horizontal-gap">Will Fossard</h1>
-          <h2 class="heading-text large-horizontal-gap">And I'm A Software Engineer</h2>
-          <p class="primary-text large-horizontal-gap width-400">
-            I'm currently building up my skills and aspire to build exceptional digital experiences.
-          </p>
+      <section id="home-contents">
+        <div id="home-container" class="home-container">
+          <h1 id="name-heading" class="heading-text large-horizontal-gap left-entry">
+            Hello, I'm <span class="heading-text secondary-text-colour">Will</span>.
+          </h1>
+          <h2 id="job-heading" class="heading-text large-horizontal-gap right-entry">I'm A junior full stack web developer</h2>
+          <div id="button-container" class="bottom-entry">
+            <button id="about-me-button" class="primary-text large-horizontal-gap width">View more about me</button>
+          </div>
         </div>
       </section>
 
