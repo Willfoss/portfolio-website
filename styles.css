@@ -1,3 +1,5 @@
+/* root CSS */
+
 * {
   padding: 0;
   margin: 0;
@@ -13,12 +15,18 @@
   --header-height: 66px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--main-bg-colour);
 }
+
+/* header CSS */
 
 header {
   width: 100%;
@@ -34,7 +42,7 @@ header {
   background-color: var(--main-bg-colour);
 }
 
-#links {
+#nav {
   display: flex;
   gap: 2em;
   padding-right: 3em;
@@ -43,6 +51,7 @@ header {
 
 .primary-text {
   color: var(--main-font-colour);
+  text-align: justify;
 }
 
 .heading-text {
@@ -55,6 +64,13 @@ header {
   font-size: 26px;
 }
 
+.active {
+  color: var(--main-secondary-colour);
+  border-bottom: 4px solid var(--main-secondary-colour);
+}
+
+/* main CSS */
+
 main {
   width: 70vw;
   display: flex;
@@ -63,15 +79,14 @@ main {
   align-items: center;
 }
 
+/* Home CSS */
+
 section {
+  margin-bottom: calc(var(--header-height) + 1px);
   height: 100vh;
 }
 
-#home-contents {
-  height: calc(100vh - var(--header-height));
-}
-
-#home-contents {
+#home {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -85,8 +100,8 @@ section {
   align-items: center;
 }
 
-.large-horizontal-gap {
-  margin-bottom: 1rem;
+.large-vertical-gap {
+  margin-bottom: 2rem;
 }
 
 .width {
@@ -100,7 +115,8 @@ section {
 
 .left-entry,
 .right-entry,
-.bottom-entry {
+.bottom-entry,
+.skills-entry {
   opacity: 0;
   transition: all 1s;
 }
@@ -117,7 +133,12 @@ section {
   transform: translateY(100%);
 }
 
+.skills-entry {
+  transform: translateX(100%);
+}
+
 #button-container {
+  margin-top: 0.8em;
   transition-delay: 1000ms;
 }
 
@@ -127,7 +148,15 @@ section {
   transform: translateY(0);
 }
 
-button {
+a {
+  text-decoration: none;
+}
+
+#about-me-button {
+  transition-delay: 0.3s;
+}
+
+.button {
   position: relative;
   background-color: var(--main-secondary-colour);
   border-radius: 5px;
@@ -144,7 +173,7 @@ button {
   -webkit-transition-duration: 0.4s; /* Safari */
 }
 
-button:after {
+.button:after {
   content: "";
   display: block;
   position: absolute;
@@ -158,7 +187,7 @@ button:after {
   box-shadow: 0 0 10px 20px white;
 }
 
-button:active:after {
+.button:active:after {
   box-shadow: 0 0 0 0 white;
   position: absolute;
   border-radius: 5px;
@@ -168,8 +197,116 @@ button:active:after {
   transition: 0s;
 }
 
-button:hover {
+.button:hover {
   border-color: transparent;
   transform: scale(1.2);
   transition: 0.3s;
+}
+
+/* about me CSS */
+
+.skill-images {
+  width: auto;
+  height: 80px;
+  margin-bottom: 0.5em;
+}
+
+.mongo-image {
+  width: 30px;
+}
+
+.skill-container {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px var(--main-secondary-colour) solid;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+#skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.skills-container {
+  width: 50%;
+}
+
+#about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-me-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+#about-me-text-container {
+  width: 50%;
+  color: var(--main-font-colour);
+}
+
+.about-heading,
+.projects-heading {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about-text-space {
+  margin-bottom: 1em;
+}
+
+.skill-container:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.skill-container:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.skill-container:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+.skill-container:nth-child(5) {
+  transition-delay: 1000ms;
+}
+
+.skill-container:nth-child(6) {
+  transition-delay: 1200ms;
+}
+
+.skill-container:nth-child(7) {
+  transition-delay: 1600ms;
+}
+
+.skill-container:nth-child(8) {
+  transition-delay: 1800ms;
+}
+
+.skill-container:nth-child(9) {
+  transition-delay: 2000ms;
+}
+
+.skill-container:nth-child(10) {
+  transition-delay: 2400ms;
+}
+
+.skill-container:nth-child(11) {
+  transition-delay: 2600ms;
+}
+
+.skill-container:nth-child(12) {
+  transition-delay: 2800ms;
 }
