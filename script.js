@@ -6,20 +6,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const navObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const id = entry.target.id;
-    const activeLink = document.querySelector(`a[href*=${id}]`);
-    activeLink.classList.remove("active");
-    console.log(id);
-    if (entry.isIntersecting) {
-      activeLink.classList.add("active");
-    } else {
-      activeLink.classList.remove("active");
-    }
-  });
-});
-
 const leftEntryElements = document.querySelectorAll(".left-entry");
 leftEntryElements.forEach((element) => observer.observe(element));
 
@@ -34,5 +20,22 @@ skillsEntryElements.forEach((element) => observer.observe(element));
 
 // nav link updates
 
-const sections = document.querySelectorAll("section");
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.dir(entry);
+    let id = entry.target.parentElement.id;
+    if (id === "home-container") {
+      id = entry.target.parentElement.parentElement.id;
+    }
+    const activeLink = document.querySelector(`a[href*=${id}]`);
+    console.log(id);
+    if (entry.isIntersecting) {
+      activeLink.classList.add("active");
+    } else {
+      activeLink.classList.remove("active");
+    }
+  });
+});
+
+const sections = document.querySelectorAll(".section-heading");
 sections.forEach((section) => navObserver.observe(section));
