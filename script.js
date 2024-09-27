@@ -20,22 +20,28 @@ skillsEntryElements.forEach((element) => observer.observe(element));
 
 // nav link updates
 
-const navObserver = new IntersectionObserver((entries) => {
+const options = {
+  threshold: 0.5,
+};
+
+const addActiveClass = (entries, observer) => {
   entries.forEach((entry) => {
-    console.dir(entry);
-    let id = entry.target.parentElement.id;
-    if (id === "home-container") {
-      id = entry.target.parentElement.parentElement.id;
-    }
-    const activeLink = document.querySelector(`a[href*=${id}]`);
-    console.log(id);
-    if (entry.isIntersecting) {
-      activeLink.classList.add("active");
-    } else {
-      activeLink.classList.remove("active");
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
+      console.log(entry.target);
+      let currentActive = document.querySelector("nav a.active");
+
+      if (currentActive) {
+        currentActive.classList.remove("active");
+      }
+      let newActive = document.getElementsByClassName(entry.target.id);
+      let newActiveElement = newActive[0];
+      console.log(newActive);
+      newActiveElement.classList.add("active");
     }
   });
-});
+};
 
-const sections = document.querySelectorAll(".section-heading");
+const navObserver = new IntersectionObserver(addActiveClass, options);
+
+const sections = document.querySelectorAll(".section");
 sections.forEach((section) => navObserver.observe(section));
