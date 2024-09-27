@@ -78,7 +78,7 @@ header {
 /* main CSS */
 
 main {
-  width: 70vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +89,7 @@ main {
 
 section {
   height: 100vh;
+  border: white 2px solid;
 }
 
 #home {
@@ -314,4 +315,93 @@ a {
 
 .skill-container:nth-child(12) {
   transition-delay: 2800ms;
+}
+
+.test {
+  background-color: #111827;
+}
+
+/* projects css */
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.projects-heading {
+  margin-bottom: 8rem;
+}
+
+#projects-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+#fe-news-container,
+#be-news-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.fe-news-image {
+  width: 1000px;
+}
+
+.tertiary-header {
+  font-size: 2rem;
+  color: var(--main-font-colour);
+}
+
+.bottom-space {
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button2 {
+  width: 10rem;
+  position: relative;
+  border-bottom: none;
+  font-size: 16px;
+  color: white;
+  padding: 0.8em 1.8em;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: linear-gradient(to top, var(--main-secondary-colour) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.3s ease-in-out;
+}
+
+.button2::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: var(--main-secondary-colour);
+}
+
+.project-image {
+  width: 54rem;
+}
+
+.button2:hover {
+  background-position: bottom;
 }
