@@ -11,27 +11,26 @@
     <header>
       <div id="logo">&lt;/&gt; WF</div>
       <nav id="nav">
-        <a class="primary-text home active" href="#home">Home</a>
-        <a class="primary-text about-me" href="#about-me">About me</a>
-        <a class="primary-text projects" href="#projects">Projects</a>
-        <a class="primary-text contact-me" href="#contact-me">Contact me </a>
-        <a class="primary-text cv" href="#cv">CV</a>
+        <a class="nav-text home active" href="#home">Home</a>
+        <a class="nav-text about-me" href="#about-me">About me</a>
+        <a class="nav-text projects" href="#projects">Projects</a>
+        <a class="nav-text contact-me" href="#contact-me">Contact me </a>
       </nav>
     </header>
     <main>
       <section id="home" class="section">
         <div id="home-container" class="home-container">
-          <h1 id="name-heading" class="heading-text large-vertical-gap left-entry">
+          <h1 id="name-heading" class="heading-text large-vertical-gap left-entry home-header">
             Hello, I'm <span class="heading-text secondary-text-colour">Will</span>.
           </h1>
-          <h2 id="job-heading" class="heading-text large-vertical-gap right-entry">I'm A junior full stack web developer</h2>
+          <h2 id="job-heading" class="heading-text large-vertical-gap right-entry home-header">I'm A junior full stack web developer</h2>
           <div id="button-container" class="bottom-entry large-vertical-gap">
             <a href="#about-me" id="about-me-button" class="button primary-text width">View more about me</a>
           </div>
         </div>
       </section>
       <section id="about-me" class="section">
-        <h2 class="heading-text about-heading section-heading">About</h2>
+        <h2 class="heading-text about-heading section-heading">About me</h2>
         <div class="about-me-container">
           <div id="about-me-text-container">
             <p class="primary-text about-text-space">
@@ -43,52 +42,52 @@
           <div id="skills-container">
             <ul id="skills-list">
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/javascript.svg" />
-                <p class="primary-text">Javascript</p>
+                <img class="skill-images" src="./assets/tech-stack/javascript.svg" />
+                <p class="skill-text">Javascript</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/html5.png" />
-                <p class="primary-text">HTML</p>
+                <img class="skill-images" src="./assets/tech-stack/html5.png" />
+                <p class="skill-text">HTML</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/css-3.png" />
-                <p class="primary-text">CSS</p>
+                <img class="skill-images" src="./assets/tech-stack/css-3.png" />
+                <p class="skill-text">CSS</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/react.svg" />
-                <p class="primary-text">React</p>
+                <img class="skill-images" src="./assets/tech-stack/react.svg" />
+                <p class="skill-text">React</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/tailwindcss-icon.svg" />
-                <p class="primary-text">Tailwind CSS</p>
+                <img class="skill-images tailwind-image" src="./assets/tech-stack/tailwindcss-icon.svg" />
+                <p class="skill-text">Tailwind CSS</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/nodejs-icon.svg" />
-                <p class="primary-text">Node.js</p>
+                <img class="skill-images" src="./assets/tech-stack/nodejs-icon.svg" />
+                <p class="skill-text">Node.js</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/express.png" />
-                <p class="primary-text">Express.js</p>
+                <img class="skill-images" src="./assets/tech-stack/express.png" />
+                <p class="skill-text">Express.js</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/git-icon.svg" />
-                <p class="primary-text">Git</p>
+                <img class="skill-images" src="./assets/tech-stack/git-icon.svg" />
+                <p class="skill-text">Git</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/jest.svg" />
-                <p class="primary-text">Jest</p>
+                <img class="skill-images" src="./assets/tech-stack/jest.svg" />
+                <p class="skill-text">Jest</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images" src="./assets/postgresql.svg" />
-                <p class="primary-text">PostgreSQL</p>
+                <img class="skill-images" src="./assets/tech-stack/postgresql.svg" />
+                <p class="skill-text">PostgreSQL</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images mongo-image" src="./assets/mongodb-icon.svg" />
-                <p class="primary-text">MongoDB</p>
+                <img class="skill-images mongo-image" src="./assets/tech-stack/mongodb-icon.svg" />
+                <p class="skill-text">MongoDB</p>
               </li>
               <li class="skill-container skills-entry">
-                <img class="skill-images github-icon" src="./assets/github.png" />
-                <p class="primary-text">Github</p>
+                <img class="skill-images github-icon" src="./assets/tech-stack/github.png" />
+                <p class="skill-text">Github</p>
               </li>
             </ul>
           </div>
@@ -98,14 +97,16 @@
         <h2 class="heading-text projects-heading section-heading">Projects</h2>
         <div id="projects-container">
           <div id="fe-news-container">
-            <img class="fe-news-image project-image" src="./assets/dot-comment-fe.png" />
+            <a class="fe-news-image-container" href="https://dotcomment.netlify.app/" target="_blank">
+              <img class="fe-news-image project-image" src="./assets/fe-news-project/dot-comment-fe.png" />
+            </a>
             <div id="fe-news-description">
               <h3 class="tertiary-header">dotComment</h3>
               <h3 class="tertiary-header bottom-space">A social news website (FE)</h3>
               <p class="primary-text bottom-space">The front end side of a full stack social news website (similar to reddit) built with React</p>
               <div class="button-container">
                 <a class="button2 live-project-button bottom-space" href="https://dotcomment.netlify.app/" target="_blank">View live project</a>
-                <a class="button2 bottom-space" href="https://github.com/Willfoss/fe-news-project" target="_blank">See it on Github</a>
+                <a class="button2 bottom-space" href="https://github.com/odonnellrory/my-plants-FE" target="_blank">See it on Github</a>
               </div>
             </div>
           </div>
@@ -123,11 +124,66 @@
                 <a class="button2 bottom-space" href="https://github.com/Willfoss/be-news-project" target="_blank">See it on Github</a>
               </div>
             </div>
-            <img class="be-news-image project-image" src="./assets/be-news.png" />
+            <a class="be-news-image-container" href="https://be-news-project-p4dz.onrender.com/api" target="_blank">
+              <img class="be-news-image project-image" src="./assets/be-news-project/be-news.png" />
+            </a>
+          </div>
+          <div id="my-plants-container">
+            <a href="https://github.com/odonnellrory/my-plants-FE" target="_blank" class="mock-up-container">
+              <img class="my-plants-mock-up" src="./assets/myPlants/welcome-page.png" alt="mock up of my plants home page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/sign-in.png" alt="mock up of my plants sign in page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/myPlants.png" alt="mock up of my plants main page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/individual-plant.png" alt="mock up of my plants individual plant page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/add-plant.png" alt="mock up of my plants add-plant page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/identify-plant.png" alt="mock up of my plants indentify plant page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/notifications.png" alt="mock up of my plants notifications page" />
+              <img class="my-plants-mock-up" src="./assets/myPlants/delete-plant.png" alt="mock up of my plants individual delete plant option" />
+            </a>
+            <div id="my-plants-description">
+              <h3 class="tertiary-header">My Plants</h3>
+              <h3 class="tertiary-header bottom-space">A full stack plant care mobile app</h3>
+              <p class="primary-text bottom-space">
+                A plant care app that notifies you when your plants need attending to and allows for plant indentification through images. This group
+                project was built using React Native, MongoDb, Jest and Node.js
+              </p>
+              <div class="button-container">
+                <a class="button2 live-project-button bottom-space" href="https://github.com/odonnellrory/my-plants-FE" target="_blank"
+                  >View FE on Github</a
+                >
+                <a class="button2 bottom-space" href="https://github.com/odonnellrory/my-plants-BE" target="_blank">View BE on Github</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer id="contact-me"></footer>
+    <footer class="section" id="contact-me">
+      <div id="contact-me-container">
+        <h2 class="heading-text contact-me-heading">Contact Me</h2>
+        <p class="primary-text contact-me-text">Have a question? Leave a message below</p>
+        <form class="contact-form" action="https://formspree.io/f/mgvwgnga" method="POST">
+          <input type="text" placeholder="Name" name="name" />
+          <input type="email" placeholder="Email" name="email" />
+          <textarea placeholder="Message" name="message"></textarea>
+          <button class="button2 bottom-space form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <a class="back-to-top-container" href="#home">
+            <img class="chevron" src="./assets/footer/white-chevron.svg" />
+          </a>
+          <div class="footer-icons">
+            <a href="https://github.com/willfoss" target="_blank">
+              <img src="./assets/footer/github-logo-footer.png" class="github-footer-icon" />
+            </a>
+            <a href="mailto:willfossard@outlook.com">
+              <img src="./assets/footer/email-logo-footer.png" class="email-footer-icon" />
+            </a>
+          </div>
+          <p class="primary-text">Will Fossard ©2024</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -21,13 +21,12 @@ skillsEntryElements.forEach((element) => observer.observe(element));
 // nav link updates
 
 const options = {
-  threshold: 0.5,
+  threshold: 0.3,
 };
 
 const addActiveClass = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
-      console.log(entry.target);
       let currentActive = document.querySelector("nav a.active");
 
       if (currentActive) {
@@ -35,7 +34,6 @@ const addActiveClass = (entries, observer) => {
       }
       let newActive = document.getElementsByClassName(entry.target.id);
       let newActiveElement = newActive[0];
-      console.log(newActive);
       newActiveElement.classList.add("active");
     }
   });
