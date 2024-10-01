@@ -177,9 +177,9 @@
         <h2 class="heading-text contact-me-heading">Contact Me</h2>
         <p class="primary-text contact-me-text">Have a question? Leave a message below</p>
         <form class="contact-form" action="https://formspree.io/f/mgvwgnga" method="POST">
-          <input type="text" placeholder="Name" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <textarea placeholder="Message" name="message"></textarea>
+          <input class="form-input" type="text" placeholder="Name" name="name" required />
+          <input class="form-input" type="email" placeholder="Email" name="email" required />
+          <textarea class="form-input" placeholder="Message" name="message" required></textarea>
           <button class="button2 bottom-space form-submit" type="submit">Submit</button>
         </form>
       </div>
@@ -196,7 +196,7 @@
               <img src="./assets/footer/email-logo-footer.png" class="email-footer-icon" />
             </a>
           </div>
-          <p class="primary-text">Will Fossard ©2024</p>
+          <p class="primary-text my-name">Will Fossard ©2024</p>
         </div>
       </div>
     </footer>

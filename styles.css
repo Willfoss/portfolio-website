@@ -13,7 +13,7 @@
   --main-secondary-colour: #0f766e;
   --main-font-colour: white;
   --heading-font-colour: rgb(197, 191, 191);
-  --header-height: 66px;
+  --header-height: 77px;
   --max-width: 1500px;
 }
 
@@ -491,9 +491,10 @@ button {
 #contact-me {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
+  height: calc(100vh - var(--header-height));
 }
 
 #contact-me-container {
@@ -522,6 +523,10 @@ textArea {
   color: white;
 }
 
+.invalid-form-input {
+  border-left: 2px solid red;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
@@ -548,7 +553,6 @@ textArea {
 
 .footer {
   width: 100%;
-  height: 12rem;
   background-color: var(--secondary-bg-colour);
 }
 
@@ -568,6 +572,7 @@ textArea {
 
 .github-footer-icon,
 .email-footer-icon {
+  margin-top: -3.5rem;
   width: 3rem;
   transition: 0.4s;
 }
@@ -575,6 +580,10 @@ textArea {
 .github-footer-icon:hover,
 .email-footer-icon:hover {
   scale: 1.2;
+}
+
+.my-name {
+  padding-bottom: 2rem;
 }
 
 .back-to-top-container {

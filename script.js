@@ -30,7 +30,6 @@ const addActiveClass = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
       let currentActive = document.querySelector("nav a.active");
-      console.log(entry.target);
       if (currentActive) {
         currentActive.classList.remove("active");
       }
@@ -63,4 +62,21 @@ function mobileMenu() {
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
+}
+
+//form checks
+
+const inputs = document.querySelectorAll(".form-input");
+const submitButton = document.querySelector(".form-submit");
+
+submitButton.addEventListener("click", formValidation);
+
+function formValidation() {
+  inputs.forEach((input) => {
+    if (input.value === "") {
+      input.classList.add("invalid-form-input");
+    } else {
+      input.classList.remove("invalid-form-input");
+    }
+  });
 }
