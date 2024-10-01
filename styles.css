@@ -39,7 +39,6 @@ header {
   color: var(--heading-font-colour);
   z-index: 500;
   background-color: var(--secondary-bg-colour);
-  height: 60px;
 }
 
 #navbar {
@@ -403,6 +402,7 @@ ul {
 /* projects css */
 
 #projects {
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -763,6 +763,9 @@ textArea {
   h3 {
     font-size: 22px;
   }
+  .button2 {
+    width: 20rem;
+  }
   .fe-news-image-container,
   .be-news-image-container,
   .mock-up-container,
@@ -817,13 +820,15 @@ textArea {
   textArea {
     width: 100%;
   }
-  #projects {
-    scroll-padding-top: 8vw !important;
-  }
 }
 @media all and (max-width: 700px) {
   .my-plants-mock-up {
     width: 7rem;
+  }
+  .contact-form,
+  input,
+  textArea {
+    width: 100%;
   }
 }
 
@@ -867,14 +872,15 @@ textArea {
   * {
     font-size: 12px;
   }
-  .contact-me-container {
-    width: 100%;
-    align-self: stretch;
+  #contact-me-container {
+    width: 90%;
   }
   .heading-text {
     font-size: 26px;
   }
   form {
+    padding-left: 2rem;
+    padding-right: 2rem;
     width: 100%;
   }
   input,
@@ -978,6 +984,11 @@ textArea {
   }
   #job-heading {
     text-align: center;
+  }
+  .contact-form,
+  input,
+  textArea {
+    width: 100%;
   }
 }
 
