@@ -322,6 +322,7 @@ ul {
 }
 
 .me-picture {
+  width: 60%;
   border-radius: 50%;
   margin-bottom: 1rem;
   border: 3px solid var(--main-secondary-colour);
@@ -726,6 +727,9 @@ textArea {
   .my-plants-mock-up {
     width: 9rem;
   }
+  .me-picture {
+    width: 50%;
+  }
 }
 
 @media all and (max-width: 770px) {
@@ -783,6 +787,12 @@ textArea {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .me-picture {
+    width: 65%;
+  }
+  #about-me-container {
+    justify-content: space-evenly;
   }
 }
 @media all and (max-width: 700px) {
