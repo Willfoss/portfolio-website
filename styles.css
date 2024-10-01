@@ -39,6 +39,7 @@ header {
   color: var(--heading-font-colour);
   z-index: 500;
   background-color: var(--secondary-bg-colour);
+  height: 60px;
 }
 
 #navbar {
@@ -114,8 +115,7 @@ main {
 
 #home,
 #about-me {
-  margin-top: var(--header-height);
-  min-height: calc(100vh - var(--header-height));
+  min-height: 100vh;
 }
 
 #home {
@@ -130,6 +130,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.home-header {
+  color: var(--heading-font-colour);
+  font-size: 3rem;
 }
 
 .large-vertical-gap {
@@ -335,6 +340,10 @@ ul {
   margin-bottom: 4rem;
 }
 
+.about-heading {
+  margin-bottom: 6rem;
+}
+
 .about-text-space {
   margin-bottom: 1em;
 }
@@ -409,6 +418,8 @@ ul {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 8rem;
 }
 
@@ -660,7 +671,7 @@ textArea {
   #be-news-description,
   #fe-news-description,
   #my-plants-description {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -723,12 +734,19 @@ textArea {
   }
   #about-me-text-container {
     width: 90%;
+    gap: 2rem;
+  }
+  .about-me-container {
+    gap: 3rem;
   }
   .my-plants-mock-up {
     width: 9rem;
   }
   .me-picture {
     width: 50%;
+  }
+  h3 {
+    text-align: center;
   }
 }
 
@@ -737,7 +755,7 @@ textArea {
     font-size: 30px;
   }
   #about-me-text-container {
-    width: 90%;
+    width: 100%;
   }
   .home-header {
     font-size: 22px;
@@ -749,7 +767,7 @@ textArea {
   .be-news-image-container,
   .mock-up-container,
   .project-image {
-    width: 90%;
+    width: 100%;
   }
   .my-plants-mock-up {
     width: 8rem;
@@ -794,6 +812,14 @@ textArea {
   #about-me-container {
     justify-content: space-evenly;
   }
+  .contact-form,
+  input,
+  textArea {
+    width: 100%;
+  }
+  #projects {
+    scroll-padding-top: 8vw !important;
+  }
 }
 @media all and (max-width: 700px) {
   .my-plants-mock-up {
@@ -803,7 +829,7 @@ textArea {
 
 @media all and (max-width: 665px) {
   .heading-text {
-    font-size: 26px;
+    font-size: 30px;
   }
   .nav-text {
     font-size: 14px;
@@ -826,11 +852,14 @@ textArea {
     width: 6rem;
   }
   #fe-news-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex: column;
     justify-content: center;
     align-items: center;
+  }
+  .projects-heading {
+    margin-top: 6rem;
   }
 }
 
@@ -841,6 +870,9 @@ textArea {
   .contact-me-container {
     width: 100%;
     align-self: stretch;
+  }
+  .heading-text {
+    font-size: 26px;
   }
   form {
     width: 100%;
@@ -857,10 +889,16 @@ textArea {
   }
   #about-me-text-container,
   .project-image {
-    width: 90%;
+    width: 100%;
   }
   .my-plants-mock-up {
     width: 8rem;
+  }
+  .fe-news-image-container,
+  .be-news-image-container,
+  .mock-up-container,
+  .project-image {
+    width: 100%;
   }
 }
 
@@ -879,18 +917,28 @@ textArea {
   textArea {
     align-self: stretch;
   }
+  .tailwind-image {
+    width: 4rem;
+  }
+  .skills-text {
+    font-size: 10px;
+  }
+  .skill-container {
+    width: 9rem;
+    height: 6rem;
+  }
   .heading-text {
-    font-size: 16px;
+    font-size: 26px;
   }
   .primary-text {
-    font-size: 12px;
+    font-size: 14px;
   }
   #about-me-text-container,
   .project-image,
   .fe-news-description,
   .be-news-description,
   .my-plants-desscription {
-    width: 90%;
+    width: 100%;
   }
   .tertiary-header {
     font-size: 14px;
@@ -913,17 +961,17 @@ textArea {
     align-self: stretch;
   }
   .heading-text {
-    font-size: 16px;
+    font-size: 26px;
   }
   .primary-text {
-    font-size: 12px;
+    font-size: 14px;
   }
   #about-me-text-container,
   .project-image,
   .fe-news-description,
   .be-news-description,
   .my-plants-desscription {
-    width: 90%;
+    width: 100%;
   }
   .tertiary-header {
     font-size: 14px;
@@ -939,5 +987,9 @@ textArea {
   }
   form {
     width: 90%;
+  }
+  .skill-container {
+    width: 7rem;
+    height: 5rem;
   }
 }
