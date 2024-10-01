@@ -20,6 +20,8 @@ bottomEntryElements.forEach((element) => observer.observe(element));
 const skillsEntryElements = document.querySelectorAll(".skills-entry");
 skillsEntryElements.forEach((element) => observer.observe(element));
 
+const aboutMeEntry = document.querySelectorAll(".about-me-entry");
+aboutMeEntry.forEach((element) => observer.observe(element));
 // nav links update depending on which section is selected
 
 const options = {
