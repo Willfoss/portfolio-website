@@ -34,23 +34,43 @@ body {
 /* header CSS */
 
 header {
-  position: fixed;
   width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
   color: var(--heading-font-colour);
   z-index: 500;
   background-color: var(--secondary-bg-colour);
 }
 
-#nav {
+#navbar {
   display: flex;
-  gap: 2em;
-  padding-right: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   color: var(--main-font-colour);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary-bg-colour);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 3rem;
 }
 
 .primary-text {
@@ -60,6 +80,7 @@ header {
 
 .nav-text {
   color: var(--main-font-colour);
+  font-size: 1.2rem;
   text-align: justify;
 }
 
@@ -69,11 +90,10 @@ header {
 }
 
 #logo {
-  padding-left: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.active {
+.nav-text.active {
   color: var(--main-secondary-colour);
   border-bottom: 4px solid var(--main-secondary-colour);
 }
@@ -665,8 +685,7 @@ textArea {
   .heading-text {
     font-size: 30px;
   }
-  .home-header,
-  #logo {
+  .home-header {
     font-size: 22px;
   }
   h3 {
@@ -675,11 +694,48 @@ textArea {
   .project-image {
     width: 50rem;
   }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--secondary-bg-colour);
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    background-color: white;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 665px) {
   .heading-text {
     font-size: 26px;
+  }
+  .nav-text {
+    font-size: 14px;
   }
   .home-header,
   #logo {
@@ -700,5 +756,92 @@ textArea {
   }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 560px) {
+  .contact-me-container {
+    width: 100%;
+    align-self: stretch;
+  }
+  form {
+    width: 100%;
+  }
+  input,
+  textArea {
+    align-self: stretch;
+  }
+  .heading-text {
+    font-size: 16px;
+  }
+  .primary-text {
+    font-size: 12px;
+  }
+  #about-me-text-container,
+  .project-image {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 530px) {
+  * {
+    font-size: 10px;
+  }
+  .contact-me-container {
+    width: 100%;
+    align-self: stretch;
+  }
+  form {
+    width: 100%;
+  }
+  input,
+  textArea {
+    align-self: stretch;
+  }
+  .heading-text {
+    font-size: 16px;
+  }
+  .primary-text {
+    font-size: 12px;
+  }
+  #about-me-text-container,
+  .project-image,
+  .fe-news-description,
+  .be-news-description,
+  .my-plants-desscription {
+    width: 90%;
+  }
+  .tertiary-header {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  * {
+    font-size: 8px;
+  }
+  .contact-me-container {
+    width: 100%;
+    align-self: stretch;
+  }
+  form {
+    width: 100%;
+  }
+  input,
+  textArea {
+    align-self: stretch;
+  }
+  .heading-text {
+    font-size: 16px;
+  }
+  .primary-text {
+    font-size: 12px;
+  }
+  #about-me-text-container,
+  .project-image,
+  .fe-news-description,
+  .be-news-description,
+  .my-plants-desscription {
+    width: 90%;
+  }
+  .tertiary-header {
+    font-size: 14px;
+  }
 }
