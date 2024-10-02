@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 18px;
 }
 
 :root {
@@ -16,6 +15,7 @@
   --max-width: 1500px;
   font-family: Inter, verdana, helvetica, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  font-size: 18px;
 }
 
 @supports (font-variation-settings: normal) {
@@ -83,6 +83,10 @@ header {
 .primary-text {
   color: var(--main-font-colour);
   text-align: justify;
+}
+
+.align-start {
+  text-align: start;
 }
 
 .nav-text {
