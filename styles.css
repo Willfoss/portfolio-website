@@ -60,7 +60,7 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--secondary-bg-colour);
+  background-color: white;
 }
 
 .nav-menu {
@@ -526,7 +526,7 @@ button {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
 }
 
 #contact-me-container {
@@ -645,6 +645,9 @@ textArea {
     margin-top: 0;
     margin-bottom: 6rem;
   }
+  #job-heading {
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 1150px) {
@@ -683,6 +686,9 @@ textArea {
   * {
     font-size: 16px;
   }
+  .home-header {
+    font-size: 30px;
+  }
   .about-me-container {
     flex-wrap: wrap;
     justify-content: center;
@@ -693,6 +699,11 @@ textArea {
   }
   .nav-text {
     font-size: 16px;
+  }
+  .skills-entry,
+  .about-me-entry {
+    transition: none;
+    transform: translateX(0%);
   }
   .heading-text,
   #logo {
@@ -748,6 +759,21 @@ textArea {
   h3 {
     text-align: center;
   }
+
+  #contact-me-container {
+    width: 90%;
+  }
+  .contact-form,
+  input,
+  textArea {
+    width: 100%;
+  }
+  .fe-news-image-container,
+  .be-news-image-container,
+  .mock-up-container,
+  .project-image {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 770px) {
@@ -763,8 +789,8 @@ textArea {
   h3 {
     font-size: 22px;
   }
-  .button2 {
-    width: 20rem;
+  .tertiary-header {
+    font-size: 24px;
   }
   .fe-news-image-container,
   .be-news-image-container,
@@ -796,7 +822,6 @@ textArea {
   .hamburger {
     display: block;
     cursor: pointer;
-    background-color: white;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -886,12 +911,19 @@ textArea {
   input,
   textArea {
     align-self: stretch;
-  }
-  .heading-text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .primary-text {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .button2 {
+    width: 15rem;
+  }
+  .footer {
+    height: 12rem;
+  }
+  .contact-form {
+    margin-bottom: 10rem;
   }
   #about-me-text-container,
   .project-image {
@@ -929,6 +961,14 @@ textArea {
   .skills-text {
     font-size: 10px;
   }
+  .email-footer-icon,
+  .github-footer-icon,
+  .chevron {
+    width: 4rem;
+  }
+  .footer-icons {
+    margin-top: 2rem;
+  }
   .skill-container {
     width: 9rem;
     height: 6rem;
@@ -949,6 +989,15 @@ textArea {
   .tertiary-header {
     font-size: 14px;
   }
+  .my-plants-mock-up {
+    width: 10rem;
+  }
+  .footer {
+    height: 18rem;
+  }
+  textArea {
+    height: 16rem;
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -961,6 +1010,9 @@ textArea {
   }
   form {
     width: 100%;
+  }
+  .button2 {
+    width: 18rem;
   }
   input,
   textArea {
@@ -989,6 +1041,15 @@ textArea {
   input,
   textArea {
     width: 100%;
+  }
+  .email-footer-icon,
+  .github-footer-icon,
+  .chevron {
+    width: 5rem;
+  }
+  .back-to-top-container {
+    margin-top: -4.5rem;
+    margin-bottom: 3rem;
   }
 }
 
