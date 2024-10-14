@@ -13,15 +13,7 @@
   --heading-font-colour: white;
   --header-height: 81px;
   --max-width: 1500px;
-  font-family: Inter, verdana, helvetica, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-  font-size: 18px;
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -649,7 +641,7 @@ textArea {
     font-size: 20px;
   }
   .projects-heading {
-    margin-top: 0;
+    margin-top: 4rem;
     margin-bottom: 6rem;
   }
   #job-heading {
@@ -971,7 +963,7 @@ textArea {
   .email-footer-icon,
   .github-footer-icon,
   .chevron {
-    width: 4rem;
+    width: 2.5rem;
   }
   .footer-icons {
     margin-top: 2rem;
