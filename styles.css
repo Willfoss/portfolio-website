@@ -284,6 +284,11 @@ button {
   border: 4px var(--main-secondary-colour) solid;
   padding: 1.5rem;
   border-radius: 10px;
+  transition: scale, 0.3s;
+}
+
+.skill-container:hover {
+  scale: 1.2;
 }
 
 ul {
@@ -980,7 +985,10 @@ textArea {
   .email-footer-icon,
   .github-footer-icon,
   .chevron {
-    width: 2.5rem;
+    width: 4.5rem;
+  }
+  .button2 {
+    width: 18rem;
   }
   .footer-icons {
     margin-top: 2rem;
