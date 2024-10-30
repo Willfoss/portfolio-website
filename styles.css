@@ -1122,10 +1122,10 @@ textArea {
   .email-footer-icon,
   .github-footer-icon,
   .chevron {
-    width: 5rem;
+    width: 6rem;
   }
   .back-to-top-container {
-    margin-top: -4.5rem;
+    margin-top: -5rem;
     margin-bottom: 3rem;
   }
   #job-heading {
