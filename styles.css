@@ -817,7 +817,7 @@ textArea {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 80px;
     flex-direction: column;
     background-color: var(--secondary-bg-colour);
     width: 100%;
