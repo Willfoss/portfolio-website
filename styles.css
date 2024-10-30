@@ -107,8 +107,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
 }
 
 /* Home CSS */
@@ -117,7 +117,7 @@ main {
 #about-me,
 #projects,
 #contact-me {
-  min-height: calc(100dvh - (var(--header-height)) - 4px);
+  min-height: calc(100dvh - (var(--header-height)));
 }
 
 #home {
@@ -703,6 +703,10 @@ textArea {
   .nav-text {
     font-size: 16px;
   }
+  #projects-container {
+    width: calc(100% - 4rem);
+    gap: 5rem;
+  }
   .skills-entry,
   .about-me-entry {
     transition: none;
@@ -715,18 +719,22 @@ textArea {
   .be-news-image-container,
   .mock-up-container,
   .project-image {
-    width: 90%;
+    width: 80%;
   }
   .projects-heading {
     margin-top: 4rem;
   }
   #fe-news-container,
   #my-plants-container {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-bg-colour);
+    padding: 2rem;
+    border-radius: 1rem;
   }
   #be-news-container {
     display: flex;
@@ -734,6 +742,9 @@ textArea {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-bg-colour);
+    border-radius: 1rem;
+    padding: 2rem;
   }
   .fe-news-image-container,
   .be-news-image-container {
@@ -746,7 +757,7 @@ textArea {
     margin-top: 6rem;
   }
   #about-me-text-container {
-    width: 90%;
+    width: 80%;
     gap: 2rem;
   }
   .about-me-container {
@@ -774,7 +785,7 @@ textArea {
   .be-news-image-container,
   .mock-up-container,
   .project-image {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -895,7 +906,7 @@ textArea {
   }
 }
 
-@media all and (max-width: 560px) {
+@media all and (max-width: 590px) {
   * {
     font-size: 12px;
   }
@@ -944,7 +955,7 @@ textArea {
 
 @media all and (max-width: 530px) {
   * {
-    font-size: 10px;
+    font-size: 8px;
   }
   .contact-me-container {
     width: 100%;
@@ -985,8 +996,8 @@ textArea {
   .project-image,
   .fe-news-description,
   .be-news-description,
-  .my-plants-desscription {
-    width: 100%;
+  .my-plants-description {
+    width: 80%;
   }
   .tertiary-header {
     font-size: 14px;
@@ -1004,7 +1015,7 @@ textArea {
 
 @media all and (max-width: 450px) {
   * {
-    font-size: 8px;
+    font-size: 6.5px;
   }
   .contact-me-container {
     width: 100%;
