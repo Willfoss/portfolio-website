@@ -1000,7 +1000,7 @@ textArea {
   .fe-news-description,
   .be-news-description,
   .my-plants-description {
-    width: 80%;
+    width: 100%;
   }
   .tertiary-header {
     font-size: 14px;
