@@ -11,7 +11,7 @@
   --main-secondary-colour: #0f766e;
   --main-font-colour: rgb(197, 191, 191);
   --heading-font-colour: white;
-  --header-height: 81px;
+  --header-height: 70px;
   --max-width: 1500px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -41,10 +41,11 @@ header {
 }
 
 #navbar {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   color: var(--main-font-colour);
 }
 
@@ -89,7 +90,7 @@ header {
 }
 
 #logo {
-  font-size: 2rem;
+  font-size: 28px;
 }
 
 .nav-text.active {
@@ -100,6 +101,7 @@ header {
 /* main CSS */
 
 main {
+  margin-top: var(--header-height);
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
@@ -112,8 +114,10 @@ main {
 /* Home CSS */
 
 #home,
-#about-me {
-  min-height: 100vh;
+#about-me,
+#projects,
+#contact-me {
+  min-height: calc(100dvh - var(--header-height));
 }
 
 #home {
@@ -401,7 +405,6 @@ ul {
 /* projects css */
 
 #projects {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -525,7 +528,6 @@ button {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  height: calc(100vh - var(--header-height));
 }
 
 #contact-me-container {
@@ -638,7 +640,7 @@ textArea {
     font-size: 16px;
   }
   .primary-text {
-    font-size: 20px;
+    font-size: 18px;
   }
   .projects-heading {
     margin-top: 4rem;
@@ -659,12 +661,14 @@ textArea {
   .primary-text {
     font-size: 16px;
   }
-  .heading-text,
-  #logo {
+  .heading-text {
     font-size: 36px;
   }
   .skill-text {
     font-size: 12px;
+  }
+  .button2 {
+    width: 15rem;
   }
   #about-me-text-container,
   #skills-container {
@@ -681,7 +685,7 @@ textArea {
   }
 }
 
-@media all and (max-width: 865px) {
+@media all and (max-width: 910px) {
   * {
     font-size: 16px;
   }
@@ -704,8 +708,7 @@ textArea {
     transition: none;
     transform: translateX(0%);
   }
-  .heading-text,
-  #logo {
+  .heading-text {
     font-size: 28px;
   }
   .fe-news-image-container,
