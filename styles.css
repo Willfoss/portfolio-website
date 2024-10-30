@@ -964,6 +964,9 @@ textArea {
   form {
     width: 100%;
   }
+  #job-heading {
+    margin-bottom: 3rem;
+  }
   input,
   textArea {
     align-self: stretch;
@@ -1063,6 +1066,9 @@ textArea {
   .back-to-top-container {
     margin-top: -4.5rem;
     margin-bottom: 3rem;
+  }
+  #job-heading {
+    margin-bottom: 4rem;
   }
 }
 
