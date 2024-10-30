@@ -73,6 +73,11 @@ header {
   margin-left: 3rem;
 }
 
+.footer-text {
+  color: var(--main-font-colour);
+  text-align: justify;
+}
+
 .primary-text {
   color: var(--main-font-colour);
   text-align: justify;
@@ -644,7 +649,8 @@ textArea {
   * {
     font-size: 16px;
   }
-  .primary-text {
+  .primary-text,
+  .footer-text {
     font-size: 18px;
   }
   .projects-heading {
@@ -663,7 +669,8 @@ textArea {
   .nav-text {
     font-size: 18px;
   }
-  .primary-text {
+  .primary-text,
+  .footer-text {
     font-size: 16px;
   }
   .heading-text {
@@ -967,7 +974,8 @@ textArea {
     align-self: stretch;
     font-size: 14px;
   }
-  .primary-text {
+  .primary-text,
+  .footer-text {
     font-size: 14px;
   }
   .button2 {
@@ -1043,7 +1051,8 @@ textArea {
   .heading-text {
     font-size: 26px;
   }
-  .primary-text {
+  .primary-text,
+  .footer-text {
     font-size: 14px;
   }
   #about-me-text-container,
@@ -1088,7 +1097,8 @@ textArea {
   .heading-text {
     font-size: 26px;
   }
-  .primary-text {
+  .primary-text,
+  .footer-text {
     font-size: 14px;
   }
   #about-me-text-container,
