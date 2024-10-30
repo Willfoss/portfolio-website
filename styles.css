@@ -702,8 +702,8 @@ textArea {
     justify-content: center;
     align-items: center;
   }
-  #skills-list {
-    gap: 2rem;
+  .primary-text {
+    align-self: flex-start;
   }
   .nav-text {
     font-size: 16px;
@@ -781,6 +781,9 @@ textArea {
   #contact-me-container {
     width: 90%;
   }
+  #about-me-text-container {
+    width: 100%;
+  }
   .contact-form,
   input,
   textArea {
@@ -791,6 +794,23 @@ textArea {
   .mock-up-container,
   .project-image {
     width: 80%;
+  }
+  #skills-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+  }
+  .skill-container {
+    width: 3rem;
+    height: 2rem;
+  }
+  .skill-container:hover {
+    scale: 1.1;
+  }
+
+  .skill-images {
+    height: 2rem;
   }
 }
 
@@ -863,6 +883,20 @@ textArea {
   textArea {
     width: 100%;
   }
+  #skills-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 1rem;
+  }
+  .skill-container {
+    width: 4rem;
+    height: 3rem;
+  }
+  .skill-images {
+    height: 2rem;
+  }
 }
 @media all and (max-width: 700px) {
   .my-plants-mock-up {
@@ -892,7 +926,9 @@ textArea {
   .project-image {
     width: 50rem;
   }
-  #about-me-text-container,
+  #about-me-text-container {
+    width: 100%;
+  }
   .project-image {
     width: 90%;
   }
@@ -956,9 +992,16 @@ textArea {
   .project-image {
     width: 100%;
   }
+  .skill-container {
+    width: 6rem;
+    height: 4rem;
+  }
+  .skill-images {
+    height: 4rem;
+  }
 }
 
-@media all and (max-width: 530px) {
+@media all and (max-width: 566px) {
   * {
     font-size: 8px;
   }
@@ -1024,7 +1067,7 @@ textArea {
   }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 487px) {
   * {
     font-size: 6.5px;
   }
@@ -1078,9 +1121,30 @@ textArea {
   #job-heading {
     margin-bottom: 4rem;
   }
+  #skills-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .skill-container {
+    width: 21vw;
+    height: 16vw;
+  }
+  .skill-images {
+    height: 11vw;
+  }
+  .mongo-image {
+    width: 10vw;
+  }
+
+  .tailwind-image {
+    width: 14vw;
+  }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 385px) {
   .my-plants-mock-up {
     width: 7rem;
   }
@@ -1088,7 +1152,7 @@ textArea {
     width: 90%;
   }
   .skill-container {
-    width: 7rem;
-    height: 5rem;
+    width: 18.5vw;
+    height: 14vw;
   }
 }
