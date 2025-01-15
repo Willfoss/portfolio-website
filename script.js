@@ -25,7 +25,7 @@ aboutMeEntry.forEach((element) => observer.observe(element));
 // nav links update depending on which section is selected
 
 const options = {
-  threshold: 0.25,
+  threshold: 0.2,
 };
 
 const addActiveClass = (entries, observer) => {

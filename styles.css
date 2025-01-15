@@ -648,30 +648,52 @@ textArea {
   width: 3rem;
 }
 
-@media all and (max-width: 1450px) {
-  * {
-    font-size: 16px;
+@media screen and (max-height: 840px) {
+  .skill-container {
+    width: 5rem;
+    height: 3rem;
   }
-  .primary-text,
-  .footer-text {
-    font-size: 18px;
+  .skill-images {
+    height: 3.5rem;
   }
-  .projects-heading {
-    margin-top: 4rem;
-    margin-bottom: 6rem;
+}
+
+@media screen and (max-height: 780px) {
+  .skill-container {
+    width: 4rem;
+    height: 2.5rem;
   }
-  #job-heading {
-    text-align: center;
+  .about-heading {
+    margin-bottom: 4rem;
+  }
+  .skill-images {
+    height: 3rem;
+  }
+}
+
+@media screen and (max-height: 732px) {
+  .skill-container {
+    width: 3.5rem;
+    height: 2rem;
+  }
+  .about-heading {
+    margin-bottom: 4rem;
+  }
+  .skill-images {
+    height: rem;
+  }
+  .me-picture {
+    width: 40%;
   }
 }
 
 @media all and (max-width: 1450px) and (max-height: 850px) {
   * {
-    font-size: 14px;
+    font-size: 13px;
   }
   .primary-text,
   .footer-text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .projects-heading {
     margin-top: 4rem;
